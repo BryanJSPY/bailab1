@@ -11,15 +11,17 @@ namespace ConsoleApplication1
         public static List<KhuDat> NhapDSKhuDat()
         {
             int n = 0;
-            Console.Write("Nhap so luong khu dat moi mua: ");
+            Console.Write("\n===Nhap so luong ['KHU DAT'] moi mua: ");
             n = int.Parse(Console.ReadLine());
 
             List<KhuDat> listKhuDat = new List<KhuDat>();
-            Console.Write("Nhap thong tin ve khu dat");
+            Console.WriteLine("\n===Nhap thong tin ve ['KHU DAT']: ");
             for(int i = 0; i < n; i++)
             {
                 KhuDat temp = new KhuDat();
+                Console.WriteLine("Khu Dat [{0}]:",i+1);
                 temp.Input();
+                Console.WriteLine("");
                 listKhuDat.Add(temp);
             }
 
@@ -27,12 +29,12 @@ namespace ConsoleApplication1
         }
         public static void XuatDSKhuDat(List<KhuDat> listKhuDat)
         {
-            Console.WriteLine("Xuat Danh Sach Khu Dat Dang Quan Ly: ");
+            Console.WriteLine("\n===Xuat Danh Sach Khu Dat Dang Quan Ly: ");
             foreach(KhuDat kd in listKhuDat)
             {
+                Console.WriteLine("");
                 kd.Show();
             }
         }
-
     }
 }

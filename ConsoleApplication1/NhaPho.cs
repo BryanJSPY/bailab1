@@ -27,10 +27,10 @@ namespace ConsoleApplication1
         {
             base.Input();
 
-            Console.WriteLine("Nam Xay Dung: ");
+            Console.Write("Nam Xay Dung: ");
             NamXayDung = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("So Tang: ");
+            Console.Write("So Tang: ");
             SoTang = int.Parse(Console.ReadLine());
         }
 

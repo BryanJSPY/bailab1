@@ -26,13 +26,13 @@ namespace ConsoleApplication1
 
         public void Input()
         {
-            Console.Write("Nhap Diem Dia Diem Khu Dat: ");
-            DiaDiem = Console.ReadLine();
+            Console.Write("Nhap Dia Diem: ");
+            DiaDiem = Console.ReadLine().ToLower();
 
-            Console.Write("Nhap Dien Tich Khu Dat: ");
+            Console.Write("Nhap Dien Tich: ");
             DienTich = int.Parse(Console.ReadLine());
 
-            Console.Write("Nhap Gia Ban Khu Dat: ");
+            Console.Write("Nhap Gia Ban: ");
             GiaBan = double.Parse(Console.ReadLine());
         }
 
